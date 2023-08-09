@@ -1,6 +1,7 @@
 body {
   text-align: center;
   background-color: #283149;
+
 }
 
 h1 {
@@ -47,6 +48,9 @@ footer {
 
 .set {
   margin: 10% auto;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .game-over {
@@ -73,10 +77,28 @@ footer {
   color: #DA0463;
   text-shadow: 3px 0 #DBEDF3;
   border-radius: 15px;
-  display: inline-block;
+
   width: 150px;
   height: 150px;
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+@media (max-width:896px){
+  .set{
+
+  flex-direction:row;
+  flex-wrap: wrap;
+
+  }
+  h1{
+    font-size: 5rem;
+  }
+  .set{
+    align-items: left;
+  }
+  .l{
+    align-self: center;
+  }
 }
