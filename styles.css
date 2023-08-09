@@ -85,7 +85,7 @@ footer {
   background-color: white;
 }
 
-@media (max-width:896px){
+@media (max-width:480px){
   .set{
 
   flex-direction:row;
@@ -93,7 +93,7 @@ footer {
 
   }
   h1{
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   .set{
     align-items: left;
