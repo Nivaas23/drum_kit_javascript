@@ -11,6 +11,12 @@ h1 {
   text-shadow: 3px 0 #DA0463;
 
 }
+.set {
+  margin: 10% auto;
+  display: flex;
+  justify-content: space-between;
+
+}
 
 footer {
   color: #DBEDF3;
@@ -19,52 +25,90 @@ footer {
 
 .w {
   background-image: url("images/tom1.png");
+  opacity: 0;
+  position: relative;
+  top: 20px; 
 
 }
-
+.w:hover{
+  flex-grow: 1.5;
+}
 .a {
   background-image: url("images/tom2.png");
+  opacity: 0;
+  position: relative;
+  top: 20px;
+}
+.a:hover{
+  flex-grow: 1.5;
 }
 
 .s {  
   background-image: url("images/tom3.png");
+  opacity: 0;
+  position: relative;
+  top: 20px;
+}
+.s:hover{
+  flex-grow: 1.5;
 }
 
 .d {
   background-image: url("images/tom4.png");
+  opacity: 0;
+  position: relative;
+  top: 20px;
 }
-
+.d:hover{
+  flex-grow: 1.5;
+}
 .j {  
   background-image: url("images/snare.png");
+  opacity: 0;
+  position: relative;
+  top: 20px;
 }
-
+.j:hover{
+  flex-grow: 1.5;
+}
 .k {
   background-image: url("images/crash.png");
+  opacity: 0;
+  position: relative;
+  top: 20px;
 }
-
+.k:hover{
+  flex-grow: 1.5;
+}
 .l {
   background-image: url("images/kick.png");
+  opacity: 0;
+  position: relative;
+  top: 20px;
+}
+.l:hover{
+  flex-grow: 1.5;
 }
 
-.set {
-  margin: 10% auto;
-  display: flex;
-  justify-content: space-between;
-
-}
 
 .game-over {
   background-color: red;
   opacity: 0.8;
 }
 
-.pressed {
+/* .pressed {
   box-shadow: 0 3px 4px 0 #DBEDF3;
   opacity: 0.5;
-}
+} */
 
 .red {
   color: red;
+}
+button:active{
+  transition-duration: 0s;
+  box-shadow: 0 4px 5px 0 #DBEDF3;
+  opacity: 0.5;
+
 }
 
 .drum {
@@ -84,8 +128,19 @@ footer {
   margin: 10px;
   background-color: white;
 }
+h1{
+  opacity: 0;
+  position: relative;
+  top: 40px;
 
-@media (max-width:600px){
+
+}
+.title{
+  top:-10px;
+  opacity: 1;
+  transition-duration: 1s;
+}
+@media (max-width:480px){
   .set{
 
   flex-direction:row;
@@ -93,12 +148,33 @@ footer {
 
   }
   h1{
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
   .set{
     align-items: left;
   }
   .l{
     align-self: center;
+  }
+  .l:hover{
+    flex-grow: 0;
+  }
+  .a:hover{
+    flex-grow: 0;
+  }
+  .w:hover{
+    flex-grow: 0;
+  }
+  .d:hover{
+    flex-grow: 0;
+  }
+  .s:hover{
+    flex-grow: 0;
+  }
+  .k:hover{
+    flex-grow: 0;
+  }
+  .j:hover{
+    flex-grow: 0;
   }
 }
